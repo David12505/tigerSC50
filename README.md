@@ -29,7 +29,7 @@ An interactive yearbook where a user can interact with other user's profile.
 
 ### Like
 - id
-- comment
+- comment_id
 - user_id
 
 ## Optional Model:
