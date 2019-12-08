@@ -20,10 +20,10 @@ class User(db.Model):
     quote = db.Column(db.Text())
 
     ## Relations
-    comments = db.relationship('Comment',backref='user'))
-    likes = db.relationship('Like',backref='user'))
-    messages = db.relationship('Message',backref='user'))
-​
+    comments = db.relationship ('Comment', backref='user'))
+    likes = db.relationship ('Like', backref='user'))
+    messages = db.relationship('Message', backref='user'))
+
     def __init__(self, email, username, password, first_name, last_name, profile_picture, preferences, quote):
         self.email = email
         self.username = username
@@ -47,7 +47,7 @@ class Comment(db.Model):
         self.poster_id = poster_id
         self.reciever_id = reciever_id
         self.comment = comment
-​
+        ​
         self.user = user 
 ​
 ​
